@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .shedule {
-  min-width: 600px;
+  max-width: 900px;
   text-align: center;
   min-height: 600px;
 }
@@ -83,12 +83,17 @@ body {
 }
 
 .modal-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   max-width: 90%;
   padding: 50px;
+  line-height: 22px;
   background: #f9f9f9;
   border-radius: 3px;
-  position: relative;
+
   box-shadow: 0 5px 15px black;
 }
 
@@ -107,4 +112,22 @@ a.close_window:hover {
 .footer {
   margin-top: 54px;
   text-align: center;
+}
+
+.caption {
+  font-weight: normal;
+}
+.title {
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+@media (max-width: 1600px) {
+  .shedule {
+    min-height: 500px;
+  }
+  .footer {
+    margin-top: 20px;
+  }
 }
