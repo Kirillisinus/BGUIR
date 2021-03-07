@@ -1,4 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -37,6 +45,7 @@ body {
 .shedule-column {
   background-color: #fff;
   padding: 0 44px;
+  -webkit-box-shadow: 0 0 5px;
   box-shadow: 0 0 5px;
 }
 .crug {
@@ -87,6 +96,8 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 90%;
@@ -94,6 +105,8 @@ body {
   line-height: 22px;
   background: #f9f9f9;
   border-radius: 3px;
+
+  -webkit-box-shadow: 0 5px 15px black;
 
   box-shadow: 0 5px 15px black;
 }
@@ -106,7 +119,11 @@ a.close_window {
   text-decoration: none;
 }
 a.close_window:hover {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
